@@ -1,14 +1,14 @@
 ## define
 ``` js
     const objectListener = (targetObj, doSomething) => {
-    return new Proxy(targetObj, {
-        set: function (target, key, value) {
-            doSomething(target, key, value);
-            target[key] = value;
-            return true;
-        }
-      });
-}
+        return new Proxy(targetObj, {
+            set: function (target, key, value) {
+                doSomething(target, key, value);
+                target[key] = value;
+                return true;
+            }
+        });
+    }
 ```
 ## use
 ``` js
