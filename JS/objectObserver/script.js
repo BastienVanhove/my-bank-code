@@ -19,7 +19,7 @@ let func = (target, key, value) => {
 let variableChangeur = objectListener(object, func)
 //define the object for change first object
 
-object.z = 7
+variableChangeur.z = 7
 //test to change object
 
 console.log(object)

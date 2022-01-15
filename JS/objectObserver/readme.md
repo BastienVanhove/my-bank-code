@@ -23,8 +23,13 @@
     let variableChangeur = objectListener(object, func)
     //define the object for change first object
 
-    object.z = 7
+    variableChangeur.z = 7
     //test to change object
 
     console.log(object)
 ```
+
+##result
+    target : [object Object], key : z, value 7
+    { x: 0, y: 0, z: 7 }
+
