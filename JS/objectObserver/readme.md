@@ -1,5 +1,5 @@
 ## for use
-    ``` javascript
+``` js
     let object = {x: 0, y: 0}
     let func = (target, key, value) => {
         console.log('variable change')
@@ -10,4 +10,4 @@
     object.z = 7
 
     console.log(object)
-    ```
+```
