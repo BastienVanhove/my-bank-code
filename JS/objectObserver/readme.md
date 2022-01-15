@@ -30,6 +30,8 @@
 ```
 
 ##result
+```
     target : [object Object], key : z, value 7
     { x: 0, y: 0, z: 7 }
+```
 
