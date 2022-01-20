@@ -1,4 +1,7 @@
-Function.prototype.timeExecute = async function(){
+interface Function{
+    timeExecute : Function;
+}
+Function.prototype.timeExecute = async function() : Promise<void> {
     const self = this
 
     const generatePromise = function(){
@@ -22,5 +25,5 @@ Function.prototype.timeExecute = async function(){
     }
 
     const time = await generatePromise()
-    console.log(`${time}ms`)
+    console.log(`function render in ${time}ms`)
 }
